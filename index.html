@@ -13,6 +13,63 @@
     <h1>Weather Dashboard</h1>
 </header>
 
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 bg-light pt-3 pb-3">
+
+            <h5>Search for a city:</h5>
+
+            <div class="input-group mb-3" id="search-city">
+                <input type="text" class="form-control" id=entered-city placeholder="" <div class="input-group-append">
+                <button class="btn btn-primary" type="button"><i class="fa fa-search"></i>
+
+            </div> <!-- End input group -->
+
+            <div class="card">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"></li>
+                </ul>
+            </div> <!-- End card -->
+        </div> <!-- End column -->
+
+        <div class="col-md-9">
+            <div class="mt-4">
+
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title current-city"><img src="" alt="">
+                        </h3>
+                        <p class="card-text current-temp">Temperature: </p>
+                        <p class="card-text current-humidity">Humidity: </p>
+                        <p class="card-text current-wind">Wind Speed: </p>
+                        <p class="card-text current-uv">UV Index: </p>
+                    </div>
+                </div>
+
+            </div>
+        </div> <!-- End column -->
+    </div> <!-- End row -->
+
+    <div class="mt-4 col-md-12">
+        <h5 class="daily-forcast">5-Day Forecast:</h5>
+
+        <div class="row">
+            <div class="card col-md-4 bg-primary text-white">
+                <div class="card-body p-3">
+                    <h5 class="card-title">
+                        <img src="" alt="">
+                    </h5>
+                    <p class="card-text">Temp: </p>
+                    <p class="card-text">Humidity: </p>
+                    <p class="card-text">Wind Speed: </p>
+                    <p class="card-text">UV Index: </p>
+                </div>
+            </div>
+        </div> <!-- End row -->
+
+    </div> <!-- End forecast container -->
+</div> <!-- End container -->
+
 
 
 
@@ -33,7 +90,7 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
 
 </body>
