@@ -12,7 +12,7 @@ $(".btn-primary").on("click", function () {
         method: "GET"
     }).then(function (response) {
         //console.log(response)
-        $(".current-city").html(response.name)
+        $(".current-city").html(response.name + " " + time)
         $(".current-humidity").text("Humidity: " + response.main.humidity + " %")
         $(".current-wind").text("Wind Speed: " + response.wind.speed + " MPH")
 
@@ -69,6 +69,7 @@ $(".btn-primary").on("click", function () {
                 for (var i = 0; i < fiveDay.length; i++) {
                     //console.log(fiveDay[i]);
 
+
                     $(".for-temp1").text("Temp: " + fiveDay[1].main.temp + " °F")
                     $(".for-humid1").text("Humidity: " + fiveDay[1].main.humidity + " %")
 
@@ -89,19 +90,23 @@ $(".btn-primary").on("click", function () {
 
         });
 
-
-
-
-
-
-
     });
+    var time = moment().format('L');
 
+    var time2 = moment().add(1, 'days').format('L');
+    $(".current-date2").html(time2)
 
+    var time3 = moment().add(1, 'days').format('L');
+    $(".current-date3").html(time3)
 
+    var time4 = moment().add(1, 'days').format('L');
+    $(".current-date4").html(time4)
 
+    var time5 = moment().add(1, 'days').format('L');
+    $(".current-date5").html(time5)
 
-
+    var time6 = moment().add(1, 'days').format('L');
+    $(".current-date6").html(time6)
 
 
 
