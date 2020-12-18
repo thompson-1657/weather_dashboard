@@ -36,7 +36,7 @@ $(".btn-primary").on("click", function () {
         var lon = response.coord.lon;
 
 
-        var queryURL2 = "http://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=a1d5f0111e093d1e307cd296b74d63f2"
+        var queryURL2 = "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=a1d5f0111e093d1e307cd296b74d63f2"
 
         $.ajax({
             url: queryURL2,
@@ -55,8 +55,7 @@ $(".btn-primary").on("click", function () {
             }
 
             var cnt = 50
-            var queryURLFiveDay = "https://api.openweathermap.org/data/2.5/forecast?&units=imperial&cnt=" + cnt + "&appid=a1d5f0111e093d1e307cd296b74d63f2&q=" +
-                citySearch
+            var queryURLFiveDay = "https://api.openweathermap.org/data/2.5/forecast?&units=imperial&cnt=" + cnt + "&appid=a1d5f0111e093d1e307cd296b74d63f2&q=" + citySearch
 
 
             $.ajax({
