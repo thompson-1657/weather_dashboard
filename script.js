@@ -1,11 +1,9 @@
 
-
-
 $(".btn-primary").on("click", function () {
     var citySearch = $('#entered-city').val();
     console.log(citySearch)
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=a1d5f0111e093d1e307cd296b74d63f2";
-    //console.log(queryURL);
+
 
     $.ajax({
         url: queryURL,
@@ -45,7 +43,7 @@ $(".btn-primary").on("click", function () {
             method: "GET",
         }).then(function (uvResponse) {
             var uvIndex = uvResponse.value;
-            // console.log(typeof uvIndex);
+
             $(".current-uv").text("UV Index: " + uvIndex);
 
             if (uvIndex < 3) {
@@ -166,19 +164,6 @@ $(".btn-primary").on("click", function () {
 
     var time6 = moment().add(5, 'days').format('L');
     $(".current-date6").html(time6)
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 });
 

@@ -4,3 +4,7 @@ h1{
     text-align: center;
 }
 
+.bg-primary {
+    margin: 10px;
+    padding: 10px;
+}
