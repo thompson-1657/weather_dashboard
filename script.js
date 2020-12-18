@@ -65,15 +65,7 @@ $(".btn-primary").on("click", function () {
             }).then(function (fiveDayResponse) {
                 console.log(fiveDayResponse);
 
-
-
-
-
-
                 var fiveDay = fiveDayResponse.list
-                console.log(fiveDay);
-
-
 
                 var weatherIcon2 = $("<img>");
                 weatherIcon2.attr(
@@ -116,8 +108,6 @@ $(".btn-primary").on("click", function () {
                 $("#wicon6").append(weatherIcon6)
 
 
-
-
                 $(".for-temp1").text("Temp: " + fiveDay[1].main.temp + " °F")
                 $(".for-humid1").text("Humidity: " + fiveDay[1].main.humidity + " %")
 
@@ -136,11 +126,6 @@ $(".btn-primary").on("click", function () {
 
                 $(".for-temp5").text("Temp: " + fiveDay[32].main.temp + " °F")
                 $(".for-humid5").text("Humidity: " + fiveDay[32].main.humidity + " %")
-
-
-
-
-
 
             })
 
