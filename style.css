@@ -11,6 +11,7 @@ h1{
 
 ul{
     list-style-type: none;
+    margin-left: 5px;
 }
 
 ul :hover{
