@@ -1,5 +1,6 @@
 var historyList = JSON.parse(localStorage.getItem("cityHistory")) || []
 renderHistory();
+searchWeather(historyList[historyList.length - 1])
 function searchWeather(citySearch) {
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=a1d5f0111e093d1e307cd296b74d63f2";
 
