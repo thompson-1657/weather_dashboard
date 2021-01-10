@@ -1,4 +1,4 @@
-Weather Dashboard
+# Weather Dashboard
 
 This application is a weather dashboard that allows the user to input a city of their choosing to receive weather data for that city. Once the city populates it will display the searched city, the current date, an icon representing the current weather conditions, the current temperature in degrees Fahrenheit, current humidity, wind speed, and current UV index.
 
@@ -19,3 +19,17 @@ A user has the ability to search city after city and pull up accurate and curren
 <img width="988" alt="Screen Shot 2020-12-17 at 10 33 24 PM" src="https://user-images.githubusercontent.com/71091515/102575148-28f16180-40b8-11eb-8dc2-9084c45fbdbf.png">
 
 Link to website:  https://thompson-1657.github.io/weather_dashboard/.
+
+### Technologies used
+* HTML5
+* CSS3
+* JavaScript
+* jQuery
+* Moment.js
+* Bootstrap
+* Font Awesome
+
+
+
+Licensed under the [MIT License](LICENSE)
+
